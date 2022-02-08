@@ -1,0 +1,13 @@
+.landing-navbar-base .inner .nav-menu {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 8px;
+    text-align: center;
+    color: white;
+  }
+  
+.topnav a:hover {
+    background-color: rgb(243, 243, 243);
+    color: rgb(92, 89, 89);
+  }
