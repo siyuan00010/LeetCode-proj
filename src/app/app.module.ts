@@ -14,7 +14,7 @@ import { getStartedComponent } from './getStarted/getStarted.component';
     getStartedComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

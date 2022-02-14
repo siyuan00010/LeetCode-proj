@@ -8,6 +8,6 @@ export class HeaderComponent{
     img: string;
 
     constructor() {
-        this.img = "https://static.tildacdn.com/tild3234-6137-4038-b336-326164306631/leetcode_logo.png";
+        this.img = "https://assets.leetcode.com/static_assets/public/webpack_bundles/images/logo-dark.e99485d9b.svg";
     }
 }
