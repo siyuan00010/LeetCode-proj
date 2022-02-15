@@ -1,6 +1,19 @@
 <div class="container-fluid base top-0">
     <div class="container pt-20 px-15" style="height:60px">
-        <lc-landingHeader>Loading header</lc-landingHeader>
+
+
+        <lc-landingHeader>Loading header
+           
+                <nav>
+                    <a routerLink="/premium">Premium</a>
+                </nav>
+             <router-outlet>Loading Premium</router-outlet>
+             <nav>
+                <a routerLink="/explore">Explore</a>
+            </nav>
+            <router-outlet>Loading explore</router-outlet>
+            <router-outlet>Loading signin</router-outlet>
+        </lc-landingHeader>
     </div>
 
 </div>
@@ -18,20 +31,26 @@
     </div>
     <div id="explore-card" class="d-flex flex-row">
         <div class="col-sm-6">
-            <lc-startExplore> Loading explore</lc-startExplore>           
+            <lc-startExplore> Loading explore</lc-startExplore>
+            <nav>
+                <a routerLink="/explore"></a>
+            </nav>
+            <router-outlet></router-outlet>
         </div>
         <div class="col-sm-6">
-            <p>Card</p>
+            <p> </p>
         </div>
 
     </div>
     <div id="problem-business" class="d-flex flex-row">
         <div class="col-sm-6">
-            <lc-questions>Loading questions</lc-questions>
-            <router-outlet>Loading route</router-outlet>
+            <lc-questions>Loading questions
+                <router-outlet>Loading problemSet</router-outlet>
+            </lc-questions>
+
         </div>
         <div class="col-sm-6">
-            <p>Business</p>
+            <p>  </p>
         </div>
 
     </div>
@@ -57,10 +76,8 @@
     </div>
 </div>
 
-<div class="container-fluid base pe-20">
-    <div class="container px-15">
-        <div class="d-flex flex-row">
-            <lc-footer>Loading footer</lc-footer>
-        </div>
+<div class="container-fluid base pe-20 end-0">
+    <div class="container-fluid px-15">
+        <lc-ft>Loading footer</lc-ft>
     </div>
 </div>

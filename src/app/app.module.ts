@@ -19,6 +19,7 @@ import { companyComponent } from './body/company.component';
 import { joinUsComponent } from './body/joinUs.component';
 import { ExploreComponent } from './body/startExplore.component';
 import { QuestionsComponent } from './body/questions.component';
+import { landingFooterComponent } from './landingFooter/landingft.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { QuestionsComponent } from './body/questions.component';
     HeaderComponent,
     getStartedComponent,
     LandingHeaderComponent,
+    landingFooterComponent,
     PremiumComponent,
     ProblemSetComponent,
     SigninComponent,
