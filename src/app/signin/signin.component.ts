@@ -3,7 +3,7 @@ import { Component } from "@angular/core";
     selector: 'lc-signin',
     templateUrl:'signin.component.html',
 })
-export class signinComponent{
+export class SigninComponent{
     imglc: string;
 
     constructor() {
