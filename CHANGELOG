@@ -2,3 +2,4 @@ lab4 adding routes
 The premium route was added to the top navigation bar Premium tab.
 The signin route was added to Sign in tab, but not functioning.
 In the premium page, top navbar was added, carousel and card were added as well.
+The Interview button on navbar has the dropdown event, and a badge was created.
