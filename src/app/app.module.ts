@@ -9,7 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { LandingHeaderComponent } from './landingHeader/landingHeader.component';
 import { PremiumComponent } from './Premium/premium.component';
 import { ProblemSetComponent } from './problemSet/problemSet.component';
-import { SigninComponent } from './signin/signin.component';
+import { SigninComponent } from './Signin/signin.component';
 import { LayoutMainComponent } from './layout_main/layout_main.component';
 import { ipadComponent } from './body/ipad.component';
 import { TextContentComponent } from './body/textContent.component';
@@ -20,7 +20,8 @@ import { joinUsComponent } from './body/joinUs.component';
 import { ExploreComponent } from './body/startExplore.component';
 import { QuestionsComponent } from './body/questions.component';
 import { landingFooterComponent } from './landingFooter/landingft.component';
-
+import { PriceComponent } from './Premium/price.component';
+import { developerComponent } from './body/developer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +41,9 @@ import { landingFooterComponent } from './landingFooter/landingft.component';
     companyComponent,
     joinUsComponent,
     ExploreComponent,
-    QuestionsComponent
+    QuestionsComponent,
+    PriceComponent,
+    developerComponent
   ],
   imports: [
     BrowserModule,

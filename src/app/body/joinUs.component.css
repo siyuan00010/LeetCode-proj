@@ -1,0 +1,19 @@
+.company-logo{
+    width: fit-content;
+    height: 170px;
+    align-items: center;
+    position: relative;
+}
+.companies-showcase-base{
+    height: 250px;
+}
+.inner-1{
+    width: 970px;
+    height: 80px;
+}
+.inner-2{
+    width: 970px;
+    height: 80px;
+}
+
+

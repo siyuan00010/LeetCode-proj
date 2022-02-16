@@ -1,29 +1,17 @@
-<div class="container-fluid base top-0">
+<div class="container-fluid top-base top-0">
     <div class="container pt-20 px-15" style="height:60px">
-
-
         <lc-landingHeader>Loading header
-           
-                <nav>
-                    <a routerLink="/premium">Premium</a>
-                </nav>
-             <router-outlet>Loading Premium</router-outlet>
-             <nav>
-                <a routerLink="/explore">Explore</a>
-            </nav>
-            <router-outlet>Loading explore</router-outlet>
+            <router-outlet>Loading Premium</router-outlet>
             <router-outlet>Loading signin</router-outlet>
         </lc-landingHeader>
     </div>
-
 </div>
-<div class="container-fluid body">
-    <div id="ipad-text" class="d-flex flex-row">
+<div class="container-fluid-body">
+    <div id="ipad-text" class="d-flex-explore flex-row">
         <div class="col-md-6 ipad px-15">
-            <div class="ipad mt-100" style="height: 384px;">
+            <div class="ipad mt-100" style="height: 384px">
                 <lc-ipad> Loading ipad</lc-ipad>
             </div>
-
         </div>
         <div class="col-md-6 text px-15">
             <lc-textContent>Loading textContent</lc-textContent>
@@ -31,27 +19,32 @@
     </div>
     <div id="explore-card" class="d-flex flex-row">
         <div class="col-sm-6">
-            <lc-startExplore> Loading explore</lc-startExplore>
-            <nav>
-                <a routerLink="/explore"></a>
-            </nav>
-            <router-outlet></router-outlet>
+            <lc-startExplore> Loading explore
+                <nav>
+                    <a routerLink="/explore">Get Started</a>
+                </nav>
+                <router-outlet>Loading explore</router-outlet>
+            </lc-startExplore>
         </div>
-        <div class="col-sm-6">
-            <p> </p>
-        </div>
-
     </div>
-    <div id="problem-business" class="d-flex flex-row">
-        <div class="col-sm-6">
+    <div id="problem-business" class="d-flex-problem row">
+        <div class="container lc-questions col-sm-6">
             <lc-questions>Loading questions
+                <nav>
+                    <a routerLink="/questions"> View Questions</a>
+                </nav>
                 <router-outlet>Loading problemSet</router-outlet>
             </lc-questions>
+        </div>
+        <div class="container lc-company col-sm-6">
+            <lc-company>Loading company
+                <router-outlet>Loading company</router-outlet>
+            </lc-company>
 
         </div>
-        <div class="col-sm-6">
-            <p>  </p>
-        </div>
+    </div>
+    <div class="developer justify-content-center">
+        <lc-developer>Loading...</lc-developer>
 
     </div>
     <div id="playground" class="d-flex flex-row">
@@ -64,19 +57,15 @@
             <lc-contentCenter>Loading contentCenter</lc-contentCenter>
         </div>
     </div>
-    <div id="company" class="d-flex flex-row">
-        <div class="col-sm-12">
-            <lc-company>Loading company</lc-company>
-        </div>
-    </div>
+
     <div id="joinUs" class="d-flex flex-row">
-        <div id="hire info" class="col-sm-12">
+        <div id="hire info" class="col-sm-12 lc-joinUs">
             <lc-joinUs>Loading hire</lc-joinUs>
         </div>
     </div>
 </div>
 
-<div class="container-fluid base pe-20 end-0">
+<div class="container-fluid bottom-base pe-20 end-0">
     <div class="container-fluid px-15">
         <lc-ft>Loading footer</lc-ft>
     </div>
