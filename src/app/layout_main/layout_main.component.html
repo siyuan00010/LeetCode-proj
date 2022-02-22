@@ -1,9 +1,6 @@
 <div class="container-fluid top-base top-0">
     <div class="container pt-20 px-15" style="height:60px">
-        <lc-landingHeader>Loading header
-            <router-outlet>Loading Premium</router-outlet>
-            <router-outlet>Loading signin</router-outlet>
-        </lc-landingHeader>
+        <lc-landingHeader>Loading header</lc-landingHeader>
     </div>
 </div>
 <div class="container-fluid-body">
@@ -19,43 +16,30 @@
     </div>
     <div id="explore-card" class="d-flex flex-row">
         <div class="col-sm-6">
-            <lc-startExplore> Loading explore
-                <nav>
-                    <a routerLink="/explore">Get Started</a>
-                </nav>
-                <router-outlet>Loading explore</router-outlet>
-            </lc-startExplore>
+            <lc-startExplore> Loading explore</lc-startExplore>
+            <router-outlet></router-outlet>
+            
         </div>
     </div>
     <div id="problem-business" class="d-flex-problem row">
         <div class="container lc-questions col-sm-6">
-            <lc-questions>Loading questions
-                <nav>
-                    <a routerLink="/questions"> View Questions</a>
-                </nav>
-                <router-outlet>Loading problemSet</router-outlet>
-            </lc-questions>
+            <lc-questions>Loading questions </lc-questions> 
+            <router-outlet></router-outlet>
+               
+           
         </div>
         <div class="container lc-company col-sm-6">
-            <lc-company>Loading company
-                <router-outlet>Loading company</router-outlet>
-            </lc-company>
+            <lc-company>Loading company</lc-company>
+            <nav>
+                <a routerLink="/business"></a>
+            </nav>
+            <router-outlet></router-outlet>
 
         </div>
     </div>
     <div class="developer justify-content-center">
         <lc-developer>Loading...</lc-developer>
 
-    </div>
-    <div id="playground" class="d-flex flex-row">
-        <div class="col-md-10">
-            <lc-centerText>Loading centerText</lc-centerText>
-        </div>
-    </div>
-    <div id="center-text" class="d-flex flex-row">
-        <div class="col-md-10 col-md-push-1">
-            <lc-contentCenter>Loading contentCenter</lc-contentCenter>
-        </div>
     </div>
 
     <div id="joinUs" class="d-flex flex-row">
