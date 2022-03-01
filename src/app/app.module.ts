@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { LayoutMainComponent } from './layout_main/layout_main.component';
@@ -21,13 +22,16 @@ import { QuestionsComponent } from './body/questions.component';
 import { PriceComponent } from './Premium/price.component';
 import { developerComponent } from './body/developer.component';
 import { BusinessComponent } from './business/business.component';
+import { UserInfoComponent } from './user-info/user-info.component';
 
 @NgModule({
     imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule
   ],
   declarations: [
+    UserInfoComponent,
     AppComponent,
     FooterComponent,
     HeaderComponent,
