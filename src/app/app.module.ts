@@ -11,7 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { PremiumComponent } from './Premium/premium.component';
 import { ExploreComponent } from './body/startExplore.component';
-import { getStartedComponent } from './body/getStarted.component';
+import { ExploreLayoutComponent } from './explore-layout/explore-layout.component';
 import { ProblemSetComponent } from './problemSet/problemSet.component';
 import { SigninComponent } from './Signin/signin.component';
 import { ipadComponent } from './body/ipad.component';
@@ -24,6 +24,7 @@ import { developerComponent } from './body/developer.component';
 import { BusinessComponent } from './business/business.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 
+
 @NgModule({
     imports: [
     BrowserModule,
@@ -35,7 +36,7 @@ import { UserInfoComponent } from './user-info/user-info.component';
     AppComponent,
     FooterComponent,
     HeaderComponent,
-    getStartedComponent,
+    ExploreLayoutComponent,
     LandingHeaderComponent,
     landingFooterComponent,
     PremiumComponent,
