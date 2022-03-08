@@ -1,0 +1,5 @@
+Main features:
+Add product.services.ts to import product data from backend on explore page
+Added the following attributes to the class “explore-layout.component.ts”:
+add for loop to import data from product list
+
