@@ -1,4 +1,4 @@
-export class exploreItemModel{
+export class exploreCate{
     picture: string;
     title: string;
     items: number;
@@ -13,5 +13,6 @@ export class exploreItemModel{
             this.title = title;
             this.picture = picture;
     }
+    
 
 }

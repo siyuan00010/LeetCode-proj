@@ -6,9 +6,10 @@ import { ProblemSetComponent } from './problemSet/problemSet.component';
 import { BusinessComponent } from './business/business.component';
 import { ExploreLayoutComponent } from "./explore-layout/explore-layout.component";
 import { jobsComponent } from './jobs/jobs.component';
+
 const routes: Routes = [
   { path: 'subscribe', component: PremiumComponent },
-  { path: 'account/signin', component: SigninComponent },
+  { path: 'accounts/signin', component: SigninComponent },
   { path: 'explore', component:ExploreLayoutComponent},
   { path: 'problemSet', component: ProblemSetComponent },
   { path: 'business/contact', component: BusinessComponent },
