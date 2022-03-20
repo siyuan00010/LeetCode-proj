@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from '../environments/environment';
 
 import { AppComponent } from './app.component';
 import { LayoutMainComponent } from './layout_main/layout_main.component';
@@ -23,13 +25,20 @@ import { PriceComponent } from './Premium/price.component';
 import { developerComponent } from './body/developer.component';
 import { BusinessComponent } from './business/business.component';
 import { UserInfoComponent } from './user-info/user-info.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { provideRemoteConfig,getRemoteConfig } from '@angular/fire/remote-config';
 
 
 @NgModule({
     imports: [
     BrowserModule,
+    AngularFireModule.initializeApp(environment.firebase),
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideDatabase(() => getDatabase()),
+    provideRemoteConfig(() => getRemoteConfig())
   ],
   declarations: [
     UserInfoComponent,

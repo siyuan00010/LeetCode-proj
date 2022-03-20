@@ -99,6 +99,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "LeetCode-project:build:production",
+            "firebaseProject": "leetcode-590a6",
+            "firebaseHostingSite": "leetcode-590a6"
+          }
         }
       }
     }
