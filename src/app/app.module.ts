@@ -25,16 +25,17 @@ import { PriceComponent } from './Premium/price.component';
 import { developerComponent } from './body/developer.component';
 import { BusinessComponent } from './business/business.component';
 import { UserInfoComponent } from './user-info/user-info.component';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
-import { provideDatabase,getDatabase } from '@angular/fire/database';
-import { provideRemoteConfig,getRemoteConfig } from '@angular/fire/remote-config';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { provideDatabase, getDatabase } from '@angular/fire/database';
+import { provideRemoteConfig, getRemoteConfig } from '@angular/fire/remote-config';
 import { AngularFireDatabase } from '@angular/fire/compat/database';
 import { ExploreCardComponent } from './body/explore-card/explore-card.component';
+import { jobsComponent } from './jobs/jobs.component';
 
 @NgModule({
-    imports: [
+  imports: [
     BrowserModule,
-    AngularFireModule.initializeApp(environment.firebase,'leetcode-app'),
+    AngularFireModule.initializeApp(environment.firebase, 'leetcode-app'),
     AppRoutingModule,
     HttpClientModule,
     // provideFirebaseApp(() => initializeApp(environment.firebase)),
@@ -57,6 +58,7 @@ import { ExploreCardComponent } from './body/explore-card/explore-card.component
     TextContentComponent,
     companyComponent,
     joinUsComponent,
+    jobsComponent,
     ExploreComponent,
     QuestionsComponent,
     PriceComponent,
