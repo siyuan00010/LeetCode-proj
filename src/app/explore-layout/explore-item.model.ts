@@ -1,4 +1,4 @@
-export class exploreCate{
+export class exploreCate{ 
     picture: string;
     title: string;
     items: number;

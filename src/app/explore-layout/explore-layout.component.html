@@ -1,15 +1,17 @@
-<div class="container-fluid">
+<div class="container-fluid d-flex">
+    <div class="container flex-row">
+        <h6>Welcome to</h6>
+        <div class="inner row">
+            <h5>LeetCode Explore</h5>
+            <span>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-clock"></i>
+            </span>
+        </div>
+    </div>
     <div class="d-flex flex-row">
-        <div *ngFor ="exploreCate" class="col-sm-4 card-space">
-            <div class="card" style="width: 18rem;">
-                <!-- <div class="card-img-top">{{exploreCate.picture}}</div>
-                <div class="card-body">
-                    <div class="description">Detailed Explanation of</div>
-                    <h5 class="card-title">{{products.title}}</h5>
-                    <div class="donut-line">{{products.chapters}}</div>
-                    <div class="donut-text">{{products.items}}<div>
-                </div> -->
-            </div>}
+        <div *ngFor ="let product of products" class="col-sm-4 card-space">
+            <lc-explore-card title={{product.title}} picture={{product.picture}} [chapters]='product.chapters' [items]='product.items'>Loading explore card</lc-explore-card>         
         </div>
     </div>
 </div>

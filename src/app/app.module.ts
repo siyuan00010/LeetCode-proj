@@ -29,6 +29,7 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { provideRemoteConfig,getRemoteConfig } from '@angular/fire/remote-config';
 import { AngularFireDatabase } from '@angular/fire/compat/database';
+import { ExploreCardComponent } from './body/explore-card/explore-card.component';
 
 @NgModule({
     imports: [
@@ -36,10 +37,9 @@ import { AngularFireDatabase } from '@angular/fire/compat/database';
     AngularFireModule.initializeApp(environment.firebase,'leetcode-app'),
     AppRoutingModule,
     HttpClientModule,
-    AngularFireDatabase,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideDatabase(() => getDatabase()),
-    provideRemoteConfig(() => getRemoteConfig())
+    // provideFirebaseApp(() => initializeApp(environment.firebase)),
+    // provideDatabase(() => getDatabase()),
+    // provideRemoteConfig(() => getRemoteConfig())
   ],
   declarations: [
     UserInfoComponent,
@@ -61,7 +61,8 @@ import { AngularFireDatabase } from '@angular/fire/compat/database';
     QuestionsComponent,
     PriceComponent,
     developerComponent,
-    BusinessComponent
+    BusinessComponent,
+    ExploreCardComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
