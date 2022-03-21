@@ -1,27 +1,30 @@
 // Creat a service component to store backend info
 import { HttpClient } from "@angular/common/http";
 import { exploreCate } from "./explore-item.model";
-import { Injectable } from "@angular/core";
+import { Injectable} from "@angular/core";
 import { AngularFireDatabase } from "@angular/fire/compat/database";
 import { Observable } from "rxjs";
 
 @Injectable({
   providedIn: 'root'
 })
-export class ProductsService {
-  private baseUrl:string='https://leetcode-590a6-default-rtdb.firebaseio.com/';
-  private productsEndPoint:string='exploreCategory.json';
+export class ProductsService{
+  private baseUrl:string='https://leetcode-590a6-default-rtdb.firebaseio.com/exploreCategory/';
+  private productsEndPoint:string='Featured.json';
 //get product info from backend
-  constructor(private http:HttpClient){}
+  constructor(private http:HttpClient){
+
+  }
   public getProducts() {
     return this.http.get<exploreCate []>(this.baseUrl + this.productsEndPoint);
     //return this.db.list<exploreCate>("exploreCate").valueChanges();
   }
-  //public getProduct(index: number) {
-    //return this.http.get<exploreCate>(this.baseUrl + 'list/' + index + '.json');
+  public getProduct(index: number) {
+    return this.http.get<exploreCate>(this.baseUrl + 'Featured' + index + '.json');
 
-  //}
-
+  }
+  
+  }
   // items: Observable<Object[]>
   // constructor(private db: AngularFireDatabase) {
   //   console.log("Setting up Fire Communication")
@@ -36,4 +39,3 @@ export class ProductsService {
   //   })
   // }
   
-}

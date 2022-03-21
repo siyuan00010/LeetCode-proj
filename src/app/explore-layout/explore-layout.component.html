@@ -34,6 +34,23 @@
             </div>
         </div>
     </div>
+    <div class="container text-left">
+
+        <h5>Interview</h5>
+        <div class="dragscroll-container d-flex flex-row">
+            <div class="row">
+                <div class="dragscroll-wrapper no-select" style="cursor: grab;">
+                    <div class="card-base flex-row">
+                        <div *ngFor="let product of products" class="card-container flex-row" style="width: 300px;">
+                            <lc-explore-card title={{product.title}} picture={{product.picture}}
+                                [chapters]='product.chapters' [items]='product.items'>Loading explore card
+                            </lc-explore-card>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 </div>
