@@ -2,9 +2,10 @@
     font-size: 12px;
     line-height: 22px;
 }
- .navbar{
+ .nav.navbar{
+   width: 100%;
     font-weight: 200;
-    font-size: 12px;
+    font-size: 20px;
     line-height: 22px;
     margin-right: 8px;
     padding-left: 20px;
