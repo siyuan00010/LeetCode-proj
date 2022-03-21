@@ -31,6 +31,7 @@ import { provideRemoteConfig, getRemoteConfig } from '@angular/fire/remote-confi
 import { AngularFireDatabase } from '@angular/fire/compat/database';
 import { ExploreCardComponent } from './body/explore-card/explore-card.component';
 import { jobsComponent } from './jobs/jobs.component';
+import { SignupComponent } from './SignUp/signup.compnent';
 
 @NgModule({
   imports: [
@@ -53,6 +54,7 @@ import { jobsComponent } from './jobs/jobs.component';
     PremiumComponent,
     ProblemSetComponent,
     SigninComponent,
+    SignupComponent,
     LayoutMainComponent,
     ipadComponent,
     TextContentComponent,

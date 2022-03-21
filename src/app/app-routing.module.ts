@@ -7,11 +7,13 @@ import { BusinessComponent } from './business/business.component';
 import { ExploreLayoutComponent } from "./explore-layout/explore-layout.component";
 import { jobsComponent } from './jobs/jobs.component';
 import { LayoutMainComponent } from './layout_main/layout_main.component';
+import { SignupComponent } from './SignUp/signup.compnent';
 
 const routes: Routes = [
   { path: '', component: LayoutMainComponent},
   { path: 'subscribe', component: PremiumComponent },
   { path: 'accounts/signin', component: SigninComponent },
+  { path: 'accounts/signup', component: SignupComponent },
   { path: 'explore', component:ExploreLayoutComponent},
   { path: 'problemSet', component: ProblemSetComponent },
   { path: 'business/contact', component: BusinessComponent },
