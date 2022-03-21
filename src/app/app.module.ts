@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireDatabase } from '@angular/fire/compat/database';
 import { environment } from '../environments/environment';
 
 import { AppComponent } from './app.component';
@@ -28,7 +29,6 @@ import { UserInfoComponent } from './user-info/user-info.component';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { provideDatabase, getDatabase } from '@angular/fire/database';
 import { provideRemoteConfig, getRemoteConfig } from '@angular/fire/remote-config';
-import { AngularFireDatabase } from '@angular/fire/compat/database';
 import { ExploreCardComponent } from './body/explore-card/explore-card.component';
 import { jobsComponent } from './jobs/jobs.component';
 import { SignupComponent } from './SignUp/signup.compnent';
