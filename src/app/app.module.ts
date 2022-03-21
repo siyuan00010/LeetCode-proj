@@ -37,6 +37,7 @@ import { SignupComponent } from './SignUp/signup.compnent';
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase, 'leetcode-app'),
+    AngularFireDatabase,
     AppRoutingModule,
     HttpClientModule,
     // provideFirebaseApp(() => initializeApp(environment.firebase)),
