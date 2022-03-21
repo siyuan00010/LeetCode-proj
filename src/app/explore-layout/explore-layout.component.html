@@ -3,25 +3,38 @@
 </div>
 <div class="container-fluid">
     <div class="d-flex">
-    <div class="container mb-5">
-        <h6>Welcome to</h6>
-        <div class="inner row">
-            <h5>LeetCode Explore</h5>
-            <span>
-                <i class="bi bi-star"></i>
-                <i class="bi bi-clock"></i>
-            </span>
+        <div class="container mb-5">
+            <h6>Welcome to</h6>
+            <div class="inner row">
+                <h5>LeetCode Explore</h5>
+                <span>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-clock"></i>
+                </span>
+            </div>
         </div>
     </div>
-</div>
 </div>
 <div class="container-fluid d-flex">
-    <h5>Featured</h5>
-    <div class="container text-center">
-        <div *ngFor="let product of products" class="col-sm-4 card-space" style="width: 25px;">
-            <lc-explore-card title={{product.title}} picture={{product.picture}} [chapters]='product.chapters'
-                [items]='product.items' style="height: 15px;">Loading explore card</lc-explore-card>
+
+    <div class="container text-left">
+
+        <h5>Featured</h5>
+        <div class="dragscroll-container d-flex flex-row">
+            <div class="row">
+                <div class="dragscroll-wrapper no-select" style="cursor: grab;">
+                    <div class="card-base flex-row">
+                        <div *ngFor="let product of products" class="card-container flex-row" style="width: 300px;">
+                            <lc-explore-card title={{product.title}} picture={{product.picture}}
+                                [chapters]='product.chapters' [items]='product.items'>Loading explore card
+                            </lc-explore-card>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+
 </div>
 <router-outlet></router-outlet>
