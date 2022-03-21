@@ -1,5 +1,5 @@
 .container-fluid-body{
-    width: 1154px;
+    width: 100%;
 }
 .top-base{
     background-color: rgb(44, 41, 41);
@@ -21,11 +21,7 @@
 .lc-joinUs{
     height: auto;
 }
-.text{
-    position: absolute;
-    top: 200px;
-    left:500px;
-}
+
 .bottom-base{
     height: 82px;
 }
