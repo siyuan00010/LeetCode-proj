@@ -1,19 +1,14 @@
-.company-logo{
+.img{
     width: fit-content;
-    height: 170px;
+    height: auto;
     align-items: center;
     position: relative;
+    color: grey;
+    margin: 20px;
 }
 .companies-showcase-base{
-    height: 250px;
+    height: auto;
 }
-.inner-1{
-    width: 970px;
-    height: 80px;
-}
-.inner-2{
-    width: 970px;
-    height: 80px;
-}
+
 
 

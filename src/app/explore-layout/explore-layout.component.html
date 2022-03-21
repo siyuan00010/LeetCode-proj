@@ -1,5 +1,9 @@
-<div class="container-fluid d-flex">
-    <div class="container flex-row">
+<div class="container-fluid">
+    <lc-header>Loading Header</lc-header>
+</div>
+<div class="container-fluid">
+    <div class="d-flex">
+    <div class="container mb-5">
         <h6>Welcome to</h6>
         <div class="inner row">
             <h5>LeetCode Explore</h5>
@@ -9,9 +13,15 @@
             </span>
         </div>
     </div>
-    <div class="d-flex flex-row">
-        <div *ngFor ="let product of products" class="col-sm-4 card-space">
-            <lc-explore-card title={{product.title}} picture={{product.picture}} [chapters]='product.chapters' [items]='product.items'>Loading explore card</lc-explore-card>         
+</div>
+</div>
+<div class="container-fluid d-flex">
+    <h5>Featured</h5>
+    <div class="container text-center">
+        <div *ngFor="let product of products" class="col-sm-4 card-space" style="width: 25px;">
+            <lc-explore-card title={{product.title}} picture={{product.picture}} [chapters]='product.chapters'
+                [items]='product.items' style="height: 15px;">Loading explore card</lc-explore-card>
         </div>
     </div>
 </div>
+<router-outlet></router-outlet>

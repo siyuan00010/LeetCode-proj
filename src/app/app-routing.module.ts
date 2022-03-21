@@ -9,7 +9,7 @@ import { jobsComponent } from './jobs/jobs.component';
 import { LayoutMainComponent } from './layout_main/layout_main.component';
 
 const routes: Routes = [
-  { path: ' ', component: LayoutMainComponent},
+  { path: '', component: LayoutMainComponent},
   { path: 'subscribe', component: PremiumComponent },
   { path: 'accounts/signin', component: SigninComponent },
   { path: 'explore', component:ExploreLayoutComponent},
