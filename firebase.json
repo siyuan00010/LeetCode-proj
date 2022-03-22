@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "leetcode-app",
+    "public": "dist/leetcode-app",
     "ignore": [
       "firebase.json",
       "**/.*",

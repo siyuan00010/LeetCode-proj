@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularFireModule } from '@angular/fire/compat';
-import { AngularFireDatabase } from '@angular/fire/compat/database';
+import { AngularFireDatabase, AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from '../environments/environment';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { provideDatabase, getDatabase } from '@angular/fire/database';
@@ -33,10 +33,12 @@ import { ExploreCardComponent } from './body/explore-card/explore-card.component
 import { jobsComponent } from './jobs/jobs.component';
 import { SignupComponent } from './SignUp/signup.compnent';
 
+
 @NgModule({
   imports: [
     BrowserModule,
-    AngularFireModule.initializeApp(environment.firebase, 'LeetCode-project'),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
     AngularFireDatabase,
     AppRoutingModule,
     HttpClientModule
