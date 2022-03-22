@@ -1,4 +1,4 @@
-# CHANGELOG in main branch
+# See CHANGELOG in main branch
 # LeetCodeProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
